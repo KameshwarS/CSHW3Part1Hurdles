@@ -19,6 +19,7 @@ public class AdmissionRecord {
 
     @OneToOne
     @JoinColumn(name = "student_id")
+
     @ToString.Exclude
     private Student student;
 }

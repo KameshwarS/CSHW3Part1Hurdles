@@ -22,7 +22,7 @@ public class Student {
 
     private String name;
 
-    @ManyToMany(mappedBy = "students")
+    @ManyToMany(mappedBy = "students",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @ToString.Exclude
     private List<Subject> subjects;
 
